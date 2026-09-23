@@ -1,0 +1,65 @@
+const menuItems = [
+  {
+    id: 1,
+    name: 'Macchiato',
+    category: 'Coffee',
+    price: 60,
+    description: 'Freshly prepared Ethiopian macchiato.',
+    image: 'https://images.unsplash.com/photo-1497636577773-f1231844b336?auto=format&fit=crop&w=900&q=80',
+    popular: true,
+  },
+  {
+    id: 7,
+    name: 'Cold Drinks',
+    category: 'Cold Drinks',
+    price: 0,
+    description: 'Coming soon — refreshing chilled favorites.',
+    image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=80',
+    popular: false,
+    comingSoon: true,
+  },
+  {
+    id: 8,
+    name: 'Fresh Juice',
+    category: 'Fresh Juice',
+    price: 0,
+    description: 'Coming soon — freshly blended fruit selections.',
+    image: 'https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=900&q=80',
+    popular: false,
+    comingSoon: true,
+  },
+  {
+    id: 9,
+    name: 'Breakfast',
+    category: 'Breakfast',
+    price: 0,
+    description: 'Coming soon — delicious breakfast plates and bites.',
+    image: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80',
+    popular: false,
+    comingSoon: true,
+  },
+  {
+    id: 10,
+    name: 'Snacks',
+    category: 'Snacks',
+    price: 0,
+    description: 'Coming soon — savory light bites and quick bites.',
+    image: 'https://images.unsplash.com/photo-1550507992-eb63ffee0847?auto=format&fit=crop&w=900&q=80',
+    popular: false,
+    comingSoon: true,
+  },
+  {
+    id: 11,
+    name: 'Cakes & Desserts',
+    category: 'Cakes & Desserts',
+    price: 0,
+    description: 'Coming soon — sweet favorites for a perfect finish.',
+    image: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80',
+    popular: false,
+    comingSoon: true,
+  },
+];
+
+export const categories = ['All', ...new Set(menuItems.map((item) => item.category))];
+
+export default menuItems;
